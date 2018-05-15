@@ -4,5 +4,7 @@ Use
 
 docker run -it -v /tmp/.X11-unix:/tmp/.X11-unix -v $(pwd):/data -e DISPLAY  baecker/ilastik-training /ilastik-1.3.0-Linux/run_ilastik.sh
 
-to run it with x-forwarding and mapping of the current folder to the folder /data in the image.
+to run it with x-forwarding and mapping of the current folder to the folder /data in the image. You need to allow access to the xserver before running this
+
+xhost +
 
